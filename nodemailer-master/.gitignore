@@ -1,0 +1,9 @@
+node_modules
+coverage/
+npm-debug.log
+.DS_Store
+test/dkim/cache/message.*
+.npmrc
+examples/test-send.js
+*.patch
+.claude

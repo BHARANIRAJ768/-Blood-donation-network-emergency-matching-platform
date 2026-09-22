@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account - VitalDrop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body class="auth-page">
+    <div class="container py-4" style="max-width:1080px;">
+        <div class="text-center mb-4">
+            <a href="index.html" class="d-inline-flex align-items-center gap-2 text-decoration-none">
+                <span class="brand-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 50C24 42.5 17.5 36.4 17.5 29.6c0-5.4 4-9.3 9-9.3 2.8 0 4.9 1.4 5.5 2.1 0.6-0.7 2.7-2.1 5.5-2.1 5 0 9 3.9 9 9.3 0 6.8-6.5 12.9-14.5 20.4z" fill="#FFF7EA"/><path d="M32 42.5c-4.6-4-7.8-6.9-7.8-10.1 0-2.4 1.8-4.1 4-4.1 1.4 0 2.6 0.7 3.8 2 1.2-1.3 2.4-2 3.8-2 2.2 0 4 1.7 4 4.1 0 3.2-3.2 6.1-7.8 10.1z" fill="#D90429"/></svg></span>
+                <span class="fs-3 fw-bold" style="font-family:Sora,sans-serif;color:var(--text);">Vital<span style="color:#B00320;">Drop</span></span>
+            </a>
+            <p class="text-muted mb-0">Create your account to join the crimson network</p>
+        </div>
+
+        <div class="row g-4 align-items-start">
+            <div class="col-lg-4">
+                <div class="auth-brand-panel">
+                    <span class="emergency-badge mb-3 d-inline-block">Join the mission</span>
+                    <h3 class="fw-bold" style="font-family:Sora,sans-serif;">One registration.<br>Countless lives.</h3>
+                    <ul class="list-unstyled mt-3 mb-0 d-grid gap-2 small" style="color:rgba(255,247,234,.85);">
+                        <li><i class="bi bi-check-circle-fill me-2" style="color:#F2D98D;"></i>Nearby donor matching</li>
+                        <li><i class="bi bi-check-circle-fill me-2" style="color:#F2D98D;"></i>Instant emergency alerts</li>
+                        <li><i class="bi bi-check-circle-fill me-2" style="color:#F2D98D;"></i>Verified donation history</li>
+                        <li><i class="bi bi-check-circle-fill me-2" style="color:#F2D98D;"></i>90-day safety reminders</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card-lifelink auth-card animate-in">
+                    <h1 class="h3 fw-bold mb-4">Registration</h1>
+
+                    <form id="registerForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label" for="name">Full Name *</label>
+                                <input type="text" class="form-control" id="name" placeholder="e.g. Priya Sharma" required>
+                                <div class="invalid-feedback">Please enter your full name.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="regEmail">Email Address *</label>
+                                <input type="email" class="form-control" id="regEmail" placeholder="you@example.com" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="phone">Phone Number *</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="e.g. +919876543210" required>
+                                <div class="invalid-feedback">Please enter a valid phone number.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="regPassword">Password * <span class="text-muted small">(min 8 chars)</span></label>
+                                <input type="password" class="form-control" id="regPassword" placeholder="Min 8 characters" required minlength="8">
+                                <div class="invalid-feedback">Password must be at least 8 characters.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="confirmPassword">Confirm Password *</label>
+                                <input type="password" class="form-control" id="confirmPassword" placeholder="Repeat password" required>
+                                <div class="invalid-feedback">Passwords do not match.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="bloodGroup">Blood Group</label>
+                                <select class="form-select" id="bloodGroup">
+                                    <option value="">Select blood group</option>
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                </select>
+                                <div class="invalid-feedback">Blood group is required for donors.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="district">District</label>
+                                <input type="text" class="form-control" id="district" placeholder="District">
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Current Location</label>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <button type="button" class="btn btn-lifelink-soft btn-sm" id="locateBtn">
+                                        <i class="bi bi-crosshair me-1"></i>Use my current location
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" style="border-radius:999px;" id="manualLocBtn">
+                                        <i class="bi bi-pencil-square me-1"></i>Enter manually
+                                    </button>
+                                    <span class="align-self-center small text-muted" id="locStatus">Location not set</span>
+                                </div>
+                                <input type="hidden" id="latitude">
+                                <input type="hidden" id="longitude">
+                                <div class="mt-2 small text-muted d-none" id="manualLocBox">
+                                    <div class="row g-2">
+                                        <div class="col-auto">
+                                            <input type="number" step="any" class="form-control form-control-sm" id="manualLat" placeholder="Latitude">
+                                        </div>
+                                        <div class="col-auto">
+                                            <input type="number" step="any" class="form-control form-control-sm" id="manualLng" placeholder="Longitude">
+                                        </div>
+                                        <div class="col-auto align-self-center">
+                                            <button type="button" class="btn btn-sm btn-success-soft" id="setManualLoc">Set</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">I want to join as *</label>
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <div class="role-option selected" data-role="DONOR" id="roleDonor">
+                                            <div class="role-logo role-logo-donor"><i class="bi bi-droplet-fill"></i><span class="role-mini"><i class="bi bi-heart-fill"></i></span></div>
+                                            <div class="role-name">Donor</div>
+                                            <div class="small text-muted">I can donate blood</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="role-option" data-role="PATIENT" id="rolePatient">
+                                            <div class="role-logo role-logo-patient"><i class="bi bi-hospital-fill"></i><span class="role-mini"><i class="bi bi-heart-pulse-fill"></i></span></div>
+                                            <div class="role-name">Patient</div>
+                                            <div class="small text-muted">I need blood</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="role" value="DONOR">
+                            </div>
+
+                            <div class="col-12" id="availabilityBox">
+                                <label class="form-label">Availability as a Donor</label>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="available" checked>
+                                    <label class="form-check-label" for="available" id="availableLabel">Available to donate</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-lifelink w-100 py-2 mt-4">
+                            <span class="inline-loader" id="registerLoader"></span>
+                            <span id="registerText"><i class="bi bi-person-plus-fill me-2"></i>Register</span>
+                        </button>
+                    </form>
+
+                    <div class="text-center mt-4">
+                        <span class="text-muted">Already have an account?</span>
+                        <a href="login.html" class="fw-bold">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

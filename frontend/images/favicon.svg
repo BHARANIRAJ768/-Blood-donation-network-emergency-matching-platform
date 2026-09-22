@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="vd-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#370617"/>
+      <stop offset="0.55" stop-color="#6A040F"/>
+      <stop offset="1" stop-color="#D90429"/>
+    </linearGradient>
+    <linearGradient id="vd-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE9A8"/>
+      <stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#vd-bg)" stroke="url(#vd-gold)" stroke-width="2.5"/>
+  <path d="M32 50C24 42.5 17.5 36.4 17.5 29.6c0-5.4 4-9.3 9-9.3 2.8 0 4.9 1.4 5.5 2.1 0.6-0.7 2.7-2.1 5.5-2.1 5 0 9 3.9 9 9.3 0 6.8-6.5 12.9-14.5 20.4z" fill="#FFF7EA"/>
+  <path d="M32 42.5c-4.6-4-7.8-6.9-7.8-10.1 0-2.4 1.8-4.1 4-4.1 1.4 0 2.6 0.7 3.8 2 1.2-1.3 2.4-2 3.8-2 2.2 0 4 1.7 4 4.1 0 3.2-3.2 6.1-7.8 10.1z" fill="#D90429"/>
+  <circle cx="46.5" cy="16.5" r="5.5" fill="url(#vd-gold)" stroke="#FFF7EA" stroke-width="2"/>
+  <path d="M46.5 19.2c-1.3-1.1-2.2-1.9-2.2-2.8 0-.7.5-1.1 1.1-1.1.4 0 .8.2 1.1.6.3-.4.7-.6 1.1-.6.6 0 1.1.4 1.1 1.1 0 .9-.9 1.7-2.2 2.8z" fill="#370617"/>
+</svg>
